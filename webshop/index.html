@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffeelicious Bakery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            background-color: #ffa07a;
+            padding: 20px;
+            text-align: center;
+        }
+        .main {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .product {
+            background-color: #ffa07a;
+            padding: 20px;
+            text-align: center;
+            margin: 10px;
+        }
+        .product h3 {
+            margin: 10px 0;
+        }
+        .footer {
+            background-color: #ffa07a;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Coffeelicious Bakery</h1>
+    </div>
+    <div class="main">
+        <div class="product">
+            <h3>Cookie Punten</h3>
+            <p>Van 19,95</p>
+            <button onclick="addToCart('Cookie Punten')">Toevoegen aan winkelwagen</button>
+        </div>
+        <div class="product">
+            <h3>Red Velvet Cake</h3>
+            <p>Van 19,95</p>
+            <button onclick="addToCart('Red Velvet Cake')">Toevoegen aan winkelwagen</button>
+        </div>
+        <div class="product">
+            <h3>Oreo Chocolate Cudge Cake</h3>
+            <p>Van 19,95</p>
+            <button onclick="addToCart('Oreo Chocolate Cudge Cake')">Toevoegen aan winkelwagen</button>
+        </div>
+    </div>
+    <div class="footer">
+        <p>&copy; 2024 Coffeelicious Bakery. All rights reserved.</p>
+    </div>
+    <script>
+        let cart = [];
+
+        function addToCart(product) {
+            cart.push(product);
+            alert("Product toegevoegd aan winkelwagen!");
+            console.log(cart);
+        }
+    </script>
+</body>
+</html>

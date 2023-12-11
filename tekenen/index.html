@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Drawing Web</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Drawing Web</h1>
+    <div class="controls">
+      <button onclick="clearCanvas()">Clear</button>
+      <button onclick="saveDrawing()">Save Drawing</button>
+      <input type="color" id="color-picker" onchange="setColor()">
+    </div>
+  </header>
+  <main>
+    <canvas id="draw-area" width="800" height="400"></canvas>
+    <div class="text">
+      <h2>Welcome to Drawing Web</h2>
+      <p>Start drawing on the canvas!</p>
+    </div>
+    <img src="" alt="Your Drawing" id="saved-drawing" style="display: none;">
+    <button onclick="clearCanvasAndSave()">Save Drawing</button>
+
+  </main>
+
+  <script src="main.js"></script>
+</body>
+</html>
